@@ -2,9 +2,7 @@
   "name": "ember-template-imports",
   "version": "3.4.1",
   "description": "The default blueprint for ember-cli addons.",
-  "keywords": [
-    "ember-addon"
-  ],
+  "keywords": ["ember-addon"],
   "repository": {
     "type": "git",
     "url": "git@github.com:ember-template-imports/ember-template-imports.git"
@@ -28,15 +26,18 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
-    "@babel/plugin-transform-class-static-block": "^7.22.5",
-    "babel-plugin-ember-template-compilation": "^2.2.0",
     "broccoli-stew": "^3.0.0",
     "content-tag": "^1.0.1",
     "ember-cli-babel-plugin-helpers": "^1.1.1",
     "ember-cli-version-checker": "^5.1.2",
     "validate-peer-dependencies": "^1.1.0"
   },
+  "peerDependencies": {
+    "babel-plugin-ember-template-compilation": "^2.2.0"
+  },
   "devDependencies": {
+    "@babel/plugin-transform-class-static-block": "^7.22.5",
+    "babel-plugin-ember-template-compilation": "^2.2.0",
     "@babel/traverse": "^7.19.6",
     "@babel/types": "^7.19.4",
     "@ember/optional-features": "^2.0.0",
@@ -95,10 +96,7 @@
   "ember-addon": {
     "main": "ember-addon-main.js",
     "configPath": "tests/dummy/config",
-    "before": [
-      "ember-cli-htmlbars",
-      "ember-cli-babel"
-    ]
+    "before": ["ember-cli-htmlbars", "ember-cli-babel"]
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
