@@ -93,6 +93,7 @@ module.exports = async function () {
         npm: {
           devDependencies: {
             'ember-source': release,
+            'ember-cli': '^5.0.0',
             ...ember5Deps,
           },
         },
