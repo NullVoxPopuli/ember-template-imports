@@ -21,8 +21,6 @@ jobs:
           node-version: 16.x
       - name: install dependencies
         run: yarn install
-      - name: build
-        run: yarn build
       - name: lint:js
         run: yarn lint:js
       - name: lint:hbs
@@ -42,10 +40,6 @@ jobs:
       - name: install dependencies
         # Dependency fetching in Windows Actions runners can be slow
         run: yarn install --network-timeout 60000
-      - name: build
-        run: yarn build
-      - name: jest
-        run: yarn test:jest
       - name: ember test
         run: yarn test:ember
 
@@ -69,10 +63,6 @@ jobs:
       - name: install dependencies
         # Dependency fetching in Windows Actions runners can be slow
         run: yarn install --network-timeout 60000
-      - name: build
-        run: yarn build
-      - name: jest
-        run: yarn test:jest
       - name: ember test
         run: yarn test:ember
 
@@ -95,10 +85,6 @@ jobs:
       - name: install dependencies
         # Dependency fetching in Windows Actions runners can be slow
         run: yarn install --network-timeout 60000
-      - name: build
-        run: yarn build
-      - name: jest
-        run: yarn test:jest
       - name: ember test
         run: yarn test:ember
 
@@ -116,10 +102,6 @@ jobs:
           node-version: 16.x
       - name: install dependencies
         run: yarn install --ignore-lockfile
-      - name: build
-        run: yarn build
-      - name: jest
-        run: yarn test:jest
       - name: ember test
         run: yarn test:ember
 
@@ -148,8 +130,6 @@ jobs:
           node-version: 16.x
       - name: install dependencies
         run: yarn install
-      - name: build
-        run: yarn build
       - name: test
         env:
           EMBER_TRY_SCENARIO: ${{ matrix.ember-try-scenario }}
