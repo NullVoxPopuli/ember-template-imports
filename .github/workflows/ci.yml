@@ -117,11 +117,14 @@ jobs:
       matrix:
         ember-try-scenario:
           - ember-3.27
+          - ember-4.12
           - ember-release
           - ember-beta
           - ember-canary
-          - embroider-safe
-          - embroider-optimized
+          - embroider-safe-min-supported
+          - embroider-optimized-min-supported
+          - embroider-safe-release
+          - embroider-optimized-release
 
     steps:
       - uses: actions/checkout@v1
