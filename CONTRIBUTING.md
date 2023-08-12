@@ -18,5 +18,4 @@
 
 ## Running tests
 
-* `yarn test:jest` – Runs jest tests
 * `yarn test:ember` – Runs ember tests
